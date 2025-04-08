@@ -1,67 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Configuración de codificación y viewport para compatibilidad con dispositivos móviles -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Usuario</title>
+    
+    <!-- Enlace a la hoja de estilos CSS externa -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Enlace a la librería Font Awesome para iconos sociales -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
+    <!-- Contenedor principal -->
     <div class="container" id="container">
 
+        <!-- Formulario de registro -->
         <div class="form-container sign-up">
             <form>
                 <h1>Crear cuenta para Registrarse</h1>
-
+                
+                <!-- Iconos para registro con redes sociales -->
                 <div class="social-icons">
                     <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
                     <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
                     <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
-
+                
                 <span>Use su correo electrónico para registrarse</span>
 
+                <!-- Campos de entrada para el registro -->
                 <input type="text" placeholder="Nombre">
                 <input type="email" placeholder="Correo Electrónico">
                 <input type="password" placeholder="Contraseña">
-
-                <!-- Eliminado duplicado de email y password -->
                 
+                <!-- Enlace para recuperación de contraseña -->
                 <a href="#">Olvido su contraseña</a>
-
+                
+                <!-- Botón de registro -->
                 <button>Registrarse</button>
             </form>
         </div>
 
+        <!-- Formulario de inicio de sesión -->
         <div class="form-container sign-in">
             <form>
-                <h1>Iniciar Sesion</h1>
-
+                <h1>Iniciar Sesión</h1>
+                
+                <!-- Iconos para inicio de sesión con redes sociales -->
                 <div class="social-icons">
                     <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
                     <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
                     <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
-
+                
+                <!-- Campos de entrada para el inicio de sesión -->
                 <input type="email" placeholder="Correo Electrónico">
                 <input type="password" placeholder="Contraseña">
+                
+                <!-- Enlace para recuperación de contraseña -->
                 <a href="#">¿Olvidó su contraseña?</a>
+                
+                <!-- Botón de inicio de sesión -->
                 <button>Iniciar Sesión</button>
             </form>
         </div>
 
-        
+        <!-- Contenedor para la animación de alternancia entre registro e inicio de sesión -->
         <div class="toggle-container">
             <div class="toggle">
+                <!-- Panel para usuarios registrados -->
                 <div class="toggle-panel toggle-left">
                     <h1>¿Ya estás registrado?</h1>
                     <p>Ingrese con sus datos personales para utilizar todas las funciones del sitio</p>
                     <button class="hidden" id="login">Iniciar Sesión</button>
                 </div>
+                
+                <!-- Panel para nuevos usuarios -->
                 <div class="toggle-panel toggle-right">
                     <h1>¿No está registrado?</h1>
                     <p>Regístrese con sus datos personales para utilizar todas las funciones del sitio.</p>
@@ -71,7 +90,7 @@
         </div>
     </div>
     
-
+    <!-- Enlace al archivo de JavaScript para funcionalidades dinámicas -->
     <script src="menu.js"></script>
 </body>
 </html>
